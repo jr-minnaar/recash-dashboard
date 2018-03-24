@@ -1,9 +1,11 @@
 {
   "name": "recash_dashboard",
+  "homepage": "http://jr-minnaar.github.io/recash-dashboard",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "bignumber.js": "^6.0.0",
+    "gh-pages": "^1.1.0",
     "material-ui": "^0.20.0",
     "moment": "^2.21.0",
     "react": "^16.0.0",
@@ -19,6 +21,7 @@
     "start": "REACT_APP_STELLAR_SERVICE_URL=http://localhost:8000/api/1 REACT_APP_API_URL=http://localhost:8001/api REACT_APP_REHIVE_API_URL=http://localhost:8002/3 REACT_APP_COMPANY_IDENTIFIER=recash react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   }
 }
