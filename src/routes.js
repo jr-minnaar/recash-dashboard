@@ -19,15 +19,15 @@ import Count from './containers/count'
 import RewardRequests from './containers/reward_requests'
 
 import { configureStore } from './store'
-import { purpleA700, blue800, grey600, white } from 'material-ui/styles/colors';
+import { green500, blue800, grey600, lightGreen50 } from 'material-ui/styles/colors';
 
 const muiTheme = getMuiTheme({
 	palette: {
-		primary1Color: purpleA700,
+		primary1Color: green500,
 		primary2Color: grey600,
 		primary3Color: blue800,
-		canvasColor: white,
-		accent1Color: purpleA700,
+		canvasColor: lightGreen50,
+		accent1Color: green500,
 		accent2Color: grey600,
 		accent3Color: blue800,
 	},

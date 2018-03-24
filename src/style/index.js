@@ -1,4 +1,4 @@
-import { cyanA200, purpleA700, white, purple50 } from 'material-ui/styles/colors';
+import { lightGreen500, lightGreen50, green500, white, purple50 } from 'material-ui/styles/colors';
 
 export const style = {
 	card: {
@@ -18,7 +18,7 @@ export const style = {
 		borderRadius: '0px',
 		maxWidth: '500px',
 		alignItems: 'center',
-		backgroundColor: purple50
+		backgroundColor: lightGreen50
 	},
 	card_right: {
 		width: '200px',
@@ -64,16 +64,16 @@ export const style = {
 		left: '60%'
 	},
 	drawer_link_highlight: (path, route) => ({
-		backgroundColor: path === route ? purpleA700 : null,
+		backgroundColor: path === route ? green500 : null,
 		color: path === route ? white : null,
 	}),
 	drawer_link_icon: (path, route) => ({ 
-		color: path === route ? white : cyanA200,
+		color: path === route ? white : lightGreen500,
 		position: 'absolute', 
 		left: '40%' 
 	}),
 	nav_menu_icon: { 
-		color: purpleA700, 
+		color: green500,
 		position: 'absolute', 
 		left: 20, 
 		paddingTop: '5px' 
