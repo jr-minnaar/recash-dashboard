@@ -23,7 +23,7 @@ class RewardRequests extends Component {
 	render() {
 		const { data, err, approveReward, rejectReward } = this.props
 		const user_data = JSON.parse(localStorage.getItem('user'))
-		
+
 		return (
 			<div className='container'>
 				<Dialog
@@ -70,7 +70,7 @@ class RewardRequests extends Component {
 					<div className='col-12'>
 						<Paper style={style.card_header} zDepth={3}>
 							<div style={style.card_left}>
-								<img style={style.card_left_img} src='trading1.svg' alt='earn' />
+								<img style={style.card_left_img} src='trading1.png' alt='earn' />
 							</div>
 							<div style={style.card_right} className='right'>
 								<h3>Reward Requests</h3>
@@ -86,7 +86,7 @@ class RewardRequests extends Component {
 									<div key={index} className='col-12'>
 										<Paper style={style.card} zDepth={3}>
 											<div style={style.card_left}>
-												<img style={style.card_left_img} alt='logo' src='trading1.svg' />
+												<img style={style.card_left_img} alt='logo' src='trading1.png' />
 											</div>
 											<div style={style.card_right} className='right'>
 												<h3>{item.reward_type}</h3>

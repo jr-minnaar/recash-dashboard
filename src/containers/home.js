@@ -4,7 +4,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 import FontIcon from 'material-ui/FontIcon'
 import Snackbar from 'material-ui/Snackbar';
 import { getWalletData } from '../actions/wallet'
-import { BigNumber } from 'bignumber.js' 
+import { BigNumber } from 'bignumber.js'
 
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
@@ -134,7 +134,7 @@ class Home extends Component {
 									<div className='col-12'>
 										<Paper style={style.card} zDepth={3}>
 											<div style={style.card_left}>
-												<img style={style.card_left_img} src='coins1.svg' alt='coins' />
+												<img style={style.card_left_img} src='coins1.png' alt='coins' />
 											</div>
 											<div style={style.card_right} className='right'>
 												<h3 className='card-heading'>Earn Tokens</h3>
@@ -148,7 +148,7 @@ class Home extends Component {
 									<div className='col-12'>
 										<Paper style={style.card} zDepth={3}>
 											<div style={style.card_left}>
-												<img style={style.card_left_img} src='trading1.svg' alt='market' />
+												<img style={style.card_left_img} src='trading1.png' alt='market' />
 											</div>
 											<div style={style.card_right} className='right'>
 												<h3 className='card-heading'>Redeem Perks</h3>

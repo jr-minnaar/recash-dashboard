@@ -4,7 +4,7 @@ import Dialog from 'material-ui/Dialog'
 import FlatButton from 'material-ui/FlatButton'
 import RaisedButton from 'material-ui/RaisedButton'
 import Loader from '../components/loader'
-import { BigNumber } from 'bignumber.js' 
+import { BigNumber } from 'bignumber.js'
 import company_data from './config.json'
 
 import { connect } from 'react-redux'
@@ -25,7 +25,7 @@ class Market extends Component {
 	render() {
 		const { data, createSend, debit_data, debit_loading, debit_error } = this.props
 		const user_data = JSON.parse(localStorage.getItem('user'))
-		
+
 		return (
 			<div className='container'>
 				<Dialog
@@ -90,7 +90,7 @@ class Market extends Component {
 											<div className='col-12'>
 												<Paper style={style.card_header} zDepth={3}>
 													<div style={style.card_left}>
-														<img style={style.card_left_img} src='trading1.svg' alt='earn' />
+														<img style={style.card_left_img} src='trading1.png' alt='earn' />
 													</div>
 													<div style={style.card_right} className='right'>
 														<h3>Purchase Perks</h3>
@@ -108,7 +108,7 @@ class Market extends Component {
 															<div key={index} className='col-12'>
 																<Paper style={style.card} zDepth={3}>
 																	<div style={style.card_left}>
-																		<img style={style.card_left_img} alt='logo' src='trading1.svg' />
+																		<img style={style.card_left_img} alt='logo' src='trading1.png' />
 																	</div>
 																	<div style={style.card_right} className='right'>
 																		<h3>{item.perk_name}</h3>
