@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Paper from 'material-ui/Paper';
 import RaisedButton from 'material-ui/RaisedButton'
-import { BigNumber } from 'bignumber.js' 
+import { BigNumber } from 'bignumber.js'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
@@ -16,7 +16,7 @@ const Earn = ({ data, currency, postClaimReward }) => (
 			<div className='col-12'>
 				<Paper style={style.card_header} zDepth={3}>
 					<div style={style.card_left}>
-						<img style={style.card_left_img} src='coins1.svg' alt='earn' />
+						<img style={style.card_left_img} src='coins1.png' alt='earn' />
 					</div>
 					<div style={style.card_right} className='right'>
 						<h3>Earn Rewards!</h3>
@@ -34,13 +34,13 @@ const Earn = ({ data, currency, postClaimReward }) => (
 						<div key={index} className='col-12'>
 							<Paper style={style.card} zDepth={3}>
 								<div style={style.card_left}>
-									<img style={style.card_left_img} src='coins1.svg' alt='earn' />
+									<img style={style.card_left_img} src='coins1.png' alt='earn' />
 								</div>
 								<div style={style.card_right} className='right'>
 									<h3>{item.reward_type.toUpperCase()}</h3>
 									<p>{item.description}</p>
 									<h1>{reward_amount} {currency}</h1>
-									<RaisedButton onClick={() => { 
+									<RaisedButton onClick={() => {
 										const user_data = JSON.parse(localStorage.getItem('user'))
 
 										let data = {
@@ -56,7 +56,7 @@ const Earn = ({ data, currency, postClaimReward }) => (
 							<br />
 						</div>
 					)
-				}) : 
+				}) :
 					<div className='col-12'>
 						<Paper style={style.transaction_card} zDepth={3}>
 							<div className='container center'>
