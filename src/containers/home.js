@@ -102,7 +102,7 @@ class Home extends Component {
 									<div className='col-12'>
 										<Paper style={style.card} zDepth={3}>
 											<div style={style.card_left}>
-												<img style={style.card_left_img} src='logo1.svg' alt='logo' />
+												<img style={style.card_left_img} src='logo.1.png' alt='logo' />
 											</div>
 											<div style={style.card_right} className='right'>
 												<h3>{ company_data && company_data.card_display_name }</h3>
